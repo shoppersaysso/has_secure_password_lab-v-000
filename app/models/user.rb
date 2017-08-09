@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     validates :password_confirmation, presence: true
 
     def is_valid?
-
+      if params[:password] == params[:password_confirmation]
     end
 
 end
