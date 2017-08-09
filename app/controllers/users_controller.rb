@@ -7,6 +7,9 @@ class UsersController < ApplicationController
     user = User.new(user_params).save
   end
 
+  def show
+  end
+
   private
 
   def user_params
