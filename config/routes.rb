@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   get 'users/signup'
 
-
-
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
